@@ -30,9 +30,9 @@
              <div class="form-group">
                 <label for="sel1">Select pizza size:</label>
             <select name="pizza" id="pizza">
-               <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
+               <option value="small" id="small">Small</option>
+                <option value="medium" id="medium">Medium</option>
+                <option value="large" id="large">Large</option>
             </select>
         </div>   
 
@@ -60,7 +60,6 @@
         </select>
       </div> <br><br>
 
-
     <!-- PLACE ORDER -->
         <div class="placeorder">
         <input type="button" id="placeorder" value="PLACE ORDER">
@@ -68,14 +67,17 @@
 
         <!-- option to order as many pizzas -->
         <label for="sel1">No. of Pizza's:</label>
-          <input type="number" name="order" id="order">
+          <input type="number" name="order" id="order">  <br><br>
 
           <!-- option to have the pizza delivered -->
-          <form action="/action_page.php" method="get">
-            Choose your favorite subject:
-            <button name="subject" type="submit" value="fav_HTML">HTML</button>
-            <button name="subject" type="submit" value="fav_CSS">CSS</button>
-          </form>
+          <form action="/action_page.php" <!--method="get"--> </form>
+           Pizza to be Delivered:
+            <button name="yes" type="submit" value="fav_yes">YES</button>
+            <button name="no" type="submit" value="fav_no">NO</button>
+          </form> <br>
+
+          <!-- checkout button -->
+          <button type="button" class="btn btn-success">checkout</button>
 
         
 
