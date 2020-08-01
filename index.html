@@ -47,11 +47,37 @@
     </div>
 
     <!-- TOPPINGS -->
+          <div class="topping">
+            <label for="sel1">Pizza Toppings:</label>
+        <select name="toppings" id="toppings">
+          <option value="Pepperoni">Pepperoni</option>
+            <option value="Mushrooms">Mushrooms</option>
+            <option value="Pineapple">Pineapple</option>
+            <option value="Extra cheese">Extra cheese</option>
+            <option value="Green peppers">Green peppers</option>
+            <option value="Spinach">Spinach</option>
+            <option value="Periperi">Periperi</option>
+        </select>
+      </div> <br><br>
+
 
     <!-- PLACE ORDER -->
         <div class="placeorder">
         <input type="button" id="placeorder" value="PLACE ORDER">
-        </div>
+        </div> <br>
+
+        <!-- option to order as many pizzas -->
+        <label for="sel1">No. of Pizza's:</label>
+          <input type="number" name="order" id="order">
+
+          <!-- option to have the pizza delivered -->
+          <form action="/action_page.php" method="get">
+            Choose your favorite subject:
+            <button name="subject" type="submit" value="fav_HTML">HTML</button>
+            <button name="subject" type="submit" value="fav_CSS">CSS</button>
+          </form>
+
+        
 
 
 
