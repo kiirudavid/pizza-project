@@ -18,38 +18,30 @@
         <div class="jumbotron">PIZZA PALACE <br> FIRST WE CONSIDER YOUR EXPERIENCE WITH US</div>
             <h1>Available Offers</h1>
 
-            <!-- <form>
-              <input type="radio" id="small" name="small" value="small">
-              <label for="small">Small</label><br>
-              <input type="radio" id="medium" name="medium" value="medium">
-              <label for="medium">Medium</label><br>
-              <input type="radio" id="large" name="large" value="large">
-              <label for="large">Large</label>
-            </form> -->
                <!-- PIZZA SIZE -->
-             <div class="form-group">
+             <div class="pizza-size">
                 <label for="sel1">Select pizza size:</label>
-            <select name="pizza" id="pizza">
-               <option value="small" id="small">Small</option>
-                <option value="medium" id="medium">Medium</option>
-                <option value="large" id="large">Large</option>
+            <select name="size" id="size">
+               <option value="@300" id="small">Small @500</option>
+                <option value="medium" id="medium">Medium @700</option>
+                <option value="large" id="large">Large @1000</option>
             </select>
         </div>   
 
         <!-- CRUST -->
         <div class="form-group">
             <label for="sel1">crust:</label>
-        <select name="pizza" id="pizza">
-           <option value="small">Crispy</option>
-            <option value="Stuffed">Stuffed</option>
-            <option value="Gluten-free">Gluten-free</option>
+        <select name="crust" id="crust">
+           <option value="200" id="crispy">Crispy @200</option>
+            <option value="400" id="stuffed">Stuffed @400</option>
+            <option value="550" id="Gluten_free">Gluten-free @550</option>
         </select>
     </div>
 
     <!-- TOPPINGS -->
           <div class="topping">
             <label for="sel1">Pizza Toppings:</label>
-        <select name="toppings" id="toppings">
+        <select name="toppings" id="toppingone">
           <option value="Pepperoni">Pepperoni</option>
             <option value="Mushrooms">Mushrooms</option>
             <option value="Pineapple">Pineapple</option>
@@ -67,7 +59,7 @@
 
         <!-- option to order as many pizzas -->
         <label for="sel1">No. of Pizza's:</label>
-          <input type="number" name="order" id="order">  <br><br>
+          <input type="number" name="order" id="numberofpizza">  <br><br>
 
           <!-- option to have the pizza delivered -->
           <form action="/action_page.php" <!--method="get"--> </form>
@@ -77,7 +69,7 @@
           </form> <br>
 
           <!-- checkout button -->
-          <button type="button" class="btn btn-success">checkout</button>
+          <button type="button" class="btn btn-success" id="submit" onclick="calctotalPrice()">checkout</button>
 
         
 
