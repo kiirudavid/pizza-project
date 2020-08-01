@@ -1,35 +1,3 @@
-// var small = parseInt(500);
-// var medium = parseInt(700);
-// var large = parseInt(1000);
-
-// var crispy = parseInt(200);
-// var Stuffed = parseInt(400);
-// var gluten_free = parseInt(550);
-
-
-
-
-
-
-
-
-
-
-
-// function Pizza(name, colors, age) {
-//     this.name = name;
-//     this.colors = colors;
-//     this.age = age;
-//   }
-  
-//   var falcor = new Dog("Falcor", ["black"], 4);
-//   var nola = new Dog("Nola", ["white", "black"], 6);
-//   var patsy = new Dog("Patsy", ["brown"], 7);  
-
-
-
-
-
 
   function getSizeCost() {
     var selectedSize = document.getElementById("size").value;
@@ -105,10 +73,10 @@ $(document).ready(function () {
     $("#delivery").submit(function () {
 
         var name = $("input#name").val();
-        var number = $("input#number").val();
-        var location = $("input#location").val();
+        // var number = $("input#number").val();
+        // var location = $("input#location").val();
 
-        alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " +  location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the pizzeria.");
+        alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " +  location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the ...");
         // $(this).get(0).reset();
         //  event.preventDefault();
     });
