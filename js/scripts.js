@@ -73,13 +73,11 @@ $(document).ready(function () {
     $("#delivery").submit(function () {
 
         var name = $("input#name").val();
-        // var number = $("input#number").val();
-        // var location = $("input#location").val();
             var location =(prompt("Enter location"));
 
         alert("Hello " + "Esteemed Customer" + ". Your order has been successfuly received and will be delivered to " +  location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the ...");
-        // $(this).get(0).reset();
-        //  event.preventDefault();
+        $(this).get(0).reset();
+         event.preventDefault();
     });
     
 });
