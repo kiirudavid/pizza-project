@@ -75,7 +75,7 @@ $(document).ready(function () {
         var name = $("input#name").val();
             var location =(prompt("Enter location"));
 
-        alert("Hello " + "Esteemed Customer" + ". Your order has been successfuly received and will be delivered to " +  location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the ...");
+        alert("Hello " + "Esteemed Customer" + ". Your order has been successfuly received and will be delivered to " +  location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the Pizza Palace");
         $(this).get(0).reset();
          event.preventDefault();
     });
