@@ -16,4 +16,5 @@
     background-image: url(../images/pizza.jpeg);
     background-repeat: no-repeat;
     float: left;
+    overflow-x: hidden;
 }
