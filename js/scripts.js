@@ -53,6 +53,14 @@ function mozarellaCheese() {
     }
     return parseInt(cheese);
 }
+function periperi() {
+    var periperi = 0;
+    var addperiperi = document.getElementById("toppingone");
+    if (addperiperi.checked === true) {
+        periperi = 110;
+    }
+    return parseInt(periperi);
+}
 
 function calctotalPrice(e) {
     event.preventDefault();
