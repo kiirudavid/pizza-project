@@ -64,7 +64,7 @@ function periperi() {
 
 function calctotalPrice(e) {
     event.preventDefault();
-    var totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
+    var totalPrice = (getSizeCost() + getCrustCost() );
     
         console.log(totalPrice);
     alert("Your order of " + getNumber() + " pizzas has been processed.Your total amount payable is " + totalPrice +"." )
@@ -79,10 +79,11 @@ function calctotalPrice(e) {
 $(document).ready(function () {
     $("#delivery").submit(function () {
 
-        var name = $("input#name").val();
+            // var name = $("input#name").val();
+            var name =(prompt("Enter your name"));
             var location =(prompt("Enter location"));
 
-        alert("Hello " + "Esteemed Customer" + ". Your order has been successfuly received and will be delivered to " +  location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the Pizza Palace");
+        alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " +  location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the Pizza Palace");
         $(this).get(0).reset();
          event.preventDefault();
     });
