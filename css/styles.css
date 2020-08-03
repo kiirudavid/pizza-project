@@ -31,7 +31,9 @@ h1{
 .body2{
     background-color: seagreen;
     padding-bottom: 3%;
-    font-size: 20px;
+    font-size: 17px;
+    color: whitesmoke;
+    font-family: fantasy;
 }
 .p{
     background-color: whitesmoke;
