@@ -1,12 +1,12 @@
 
-  function getSizeCost() {
+function getSizeCost() {
     var selectedSize = document.getElementById("size").value;
     console.log(selectedSize);
     return parseInt(selectedSize);
 }
 
 function getCrustCost() {
-    var selectedCrust = document.getElementById("crust").value;10
+    var selectedCrust = document.getElementById("crust").value; 10
     console.log(selectedCrust)
     return parseInt(selectedCrust);
 }
@@ -74,9 +74,9 @@ function periperi() {
 function calctotalPrice(e) {
     event.preventDefault();
     var totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
-    
-        console.log(totalPrice);
-    alert("Your order of " + getNumber() + " pizzas has been processed.Your total amount payable is " + totalPrice +"." )
+
+    console.log(totalPrice);
+    alert("Your order of " + getNumber() + " pizzas has been processed.Your total amount payable is " + totalPrice + ".")
 
 }
 
@@ -88,14 +88,14 @@ function calctotalPrice(e) {
 $(document).ready(function () {
     $("#delivery").submit(function () {
 
-            // var name = $("input#name").val();
-            var name =(prompt("Enter your name"));
-            var contact =(prompt("Enter your contact"));
-            var location =(prompt("Enter location"));
+        // var name = $("input#name").val();
+        var name = (prompt("Enter your name"));
+        var contact = (prompt("Enter your contact"));
+        var location = (prompt("Enter location"));
 
-        alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " +  location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the Pizza Palace");
+        alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " + location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the Pizza Palace");
         $(this).get(0).reset();
-         event.preventDefault();
+        event.preventDefault();
     });
-    
+
 });
