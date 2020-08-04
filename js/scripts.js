@@ -16,9 +16,9 @@ function getNumber() {
     return parseInt(selectedNumber);
 }
 
-      function toppings (){
-            var to
-  }
+//       function toppings (){
+//             var to
+//   }
 
 function mushrooms() {
     var mushroom = 0;
