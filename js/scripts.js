@@ -64,7 +64,7 @@ function periperi() {
 
 function calctotalPrice(e) {
     event.preventDefault();
-    var totalPrice = (getSizeCost() + getCrustCost() );
+    var totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
     
         console.log(totalPrice);
     alert("Your order of " + getNumber() + " pizzas has been processed.Your total amount payable is " + totalPrice +"." )
