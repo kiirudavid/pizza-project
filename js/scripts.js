@@ -81,6 +81,7 @@ $(document).ready(function () {
 
             // var name = $("input#name").val();
             var name =(prompt("Enter your name"));
+            var contact =(prompt("Enter your contact"));
             var location =(prompt("Enter location"));
 
         alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " +  location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the Pizza Palace");
