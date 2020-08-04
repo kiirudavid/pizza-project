@@ -1,23 +1,32 @@
 
   function getSizeCost() {
     var selectedSize = document.getElementById("size").value;
+    console.log(selectedSize);
     return parseInt(selectedSize);
 }
 
 function getCrustCost() {
-    var selectedCrust = document.getElementById("crust").value;
+    var selectedCrust = document.getElementById("crust").value;10
+    console.log(selectedCrust)
     return parseInt(selectedCrust);
 }
 function getNumber() {
     var selectedNumber = document.getElementById("numberofpizza").value;
+    console.log(selectedNumber)
     return parseInt(selectedNumber);
 }
+
+      function toppings (){
+            var to
+  }
+
 function mushrooms() {
     var mushroom = 0;
     var addMushroom = document.getElementById("toppingone");
     if (addMushroom.checked === true) {
         mushroom = 150;
     }
+    console.log(mushroom)
     return parseInt(mushroom);
 }
 
@@ -37,7 +46,7 @@ function onions() {
     }
     return parseInt(onion);
 }
-function tikkaSaucee() {
+function tikkaSauce() {
     var tikkaSauce = 0;
     var addtikkaSauce = document.getElementById("toppingone");
     if (addtikkaSauce.checked === true) {
